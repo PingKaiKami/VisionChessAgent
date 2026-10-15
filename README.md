@@ -181,7 +181,6 @@ For a consistent target interface, keep the board theme and piece style fixed an
 ```text
 src/game_agent/          Vision, chess control, dataset, training, CLI, and safety code
 tests/                   Unit and regression tests
-models/README.md         Model training, provenance, and rights guidance
 chess_asset_sources.json Example real-image asset manifest
 THIRD_PARTY_NOTICES.md   Dependency and visual-asset license notices
 pyproject.toml           Dependencies and CLI entry points
@@ -199,7 +198,7 @@ The experience gained here will inform a **new, separate universal-agent reposit
 
 Original project source code is Copyright (c) 2026 PingKaiKami and licensed under the [MIT License](LICENSE). Dependencies remain under their respective licenses; notably, `python-chess` is GPL-3.0-or-later and Stockfish is GPL-3.0. See [Third-Party Notices](THIRD_PARTY_NOTICES.md) for details and obligations.
 
-The MIT License does **not** cover Chess.com screenshots or artwork, generated datasets derived from them, or user-trained model weights. No pretrained checkpoint is distributed; see the [model provenance notice](models/README.md). Training a model yourself does not remove restrictions inherited from third-party source material.
+The MIT License does **not** cover Chess.com screenshots or artwork, generated datasets derived from them, or user-trained model weights. No pretrained checkpoint is distributed. Training a model yourself does not remove restrictions inherited from third-party source material.
 
 ## Responsible use
 

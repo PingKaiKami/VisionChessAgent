@@ -31,5 +31,5 @@ Generated datasets and derivatives retain any restrictions arising from their
 source material.
 
 The repository does not distribute pretrained CNN weights. User-trained models
-have separate provenance and licensing considerations; see
-[`models/README.md`](models/README.md).
+have separate provenance and licensing considerations and may inherit
+restrictions from their training data.

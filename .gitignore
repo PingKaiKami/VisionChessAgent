@@ -49,6 +49,3 @@ models/*
 *.pth
 *.report.json
 *.curve.png
-
-# Documentation is tracked, but all model weights remain local
-!models/README.md
