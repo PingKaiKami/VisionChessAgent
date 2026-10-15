@@ -1,0 +1,54 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.token
+
+# OS/editor and temporary files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+~$*
+
+# Local calibration, captures, and debug output
+chess-calibration.json
+board.png
+board_test*.png
+*-scan-debug.png
+*-debug.png
+after.png
+chess-templates.npz
+chess-debug/
+debug/
+board_start.png
+board_blank.png
+board_kq_opposite.png
+
+# Local engines, datasets, assets, models, and training output
+stockfish/
+chess-datasets/
+dataset*/
+assets/
+cnn-checkpoints/
+cnn-reports/
+models/*
+*.pt
+*.pth
+*.report.json
+*.curve.png
+
+# Documentation is tracked, but all model weights remain local
+!models/README.md

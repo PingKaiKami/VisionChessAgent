@@ -1,0 +1,17 @@
+{
+  "piece_style": "chesscom-classic",
+  "config": "chess-calibration.json",
+  "empty_board": "board_blank.png",
+  "sources": [
+    {
+      "source_id": "start",
+      "image": "board_start.png",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR"
+    },
+    {
+      "source_id": "opposite-kq",
+      "image": "board_kq_opposite.png",
+      "fen": "rnb2bnr/pppqkppp/3pp3/8/8/3PP3/PPPQKPPP/RNB2BNR"
+    }
+  ]
+}

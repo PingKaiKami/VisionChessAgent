@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "game-agent"
+version = "1.0.0"
+description = "Vision-based autonomous chess research prototype"
+requires-python = ">=3.11"
+dependencies = [
+  "mss>=9,<11",
+  "numpy>=1.26,<3",
+  "PyAutoGUI>=0.9.54,<1",
+  "opencv-python-headless>=4.10,<5",
+  "python-chess>=1.999,<2",
+]
+
+[project.optional-dependencies]
+ml = [
+  "torch>=2.3,<3",
+  "torchvision>=0.18,<1",
+  "cairosvg>=2.7,<3",
+  "Pillow>=10,<13",
+]
+
+[project.scripts]
+game-agent = "game_agent.cli:main"
+chess-learn = "game_agent.cli:chess_learn_main"
+chess-scan = "game_agent.cli:chess_scan_main"
+chess-play = "game_agent.cli:chess_play_main"
+chess-dataset = "game_agent.cli:chess_dataset_main"
+chess-assets = "game_agent.cli:chess_assets_main"
+chess-real-dataset = "game_agent.cli:chess_real_dataset_main"
+chess-train = "game_agent.cli:chess_train_main"
+chess-evaluate = "game_agent.cli:chess_evaluate_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
